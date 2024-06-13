@@ -1,0 +1,280 @@
+:root {
+/*Light Mode*/
+--primary-font: "Poppins", sans-serif;
+--primary-bg-color: #fff;
+--primary-text-color: #000;
+--secondary-color: #575757;
+--btn-bg-color: #2196f3;
+--cta-hover-color: #167bce;
+--btn-bg-light: #eee;
+
+/*Dark Mode*/
+--dark-primary-bg-color: #222;
+--dark-primary-text-color: #fff;
+--dark-secondary-color: #828282;
+--dark-btn-bg-color: #1e88e5;
+--dark-cta-hover-color: #0d5e8c;
+--dark-btn-bg-light: #eee;
+}
+
+.dark-theme{
+--primary-bg-color: var(--dark-primary-bg-color);
+--primary-text-color: var(--dark-primary-text-color);
+--secondary-color: var(--dark-secondary-color);
+--btn-bg-color: var(--dark-btn-bg-color);
+--cta-hover-color: var(--dark-cta-hover-color);
+--btn-bg-light: var(--dark-btn-bg-light);
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.theme-btn {
+    position: relative;
+    left: 8.5rem;
+}
+
+h1,h2,h3, p {
+    margin: 0;
+    cursor: default;
+}
+
+article, footer, .hero, .logo-container, .experience, .cta, .portofolio-skills, .btn-bg, .portfolio, .skills{
+    display: flex;
+}
+
+.hero, .portfolio, .skills{
+    flex-direction: column;
+}
+
+.hero, .btn-bg, .portfolio, .skills{
+    align-items: center;
+}
+
+.theme-btn, .logo-container a, .logo-container img{
+    align-items: center;
+    height: 1.5rem;
+}
+
+.hero, .experience, .wrapper {
+    text-align: center;
+}
+
+article, .hero, .logo-container, .portfolio, .skills{
+    display: flex;
+    gap: 1rem;
+}
+
+.wrapper.project-wrapper {
+    margin-bottom: 20px;
+}
+
+.coming-soon {
+    font-size: 24px;
+    color: grey;
+}
+
+.hero-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-circle {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+    right: 0.1rem;
+    border-radius: 50%;
+    border: 0.18rem solid var(--primary-bg-color);
+    z-index: 1;
+
+}
+
+.hero-pic img, .wrapper img {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    
+}
+.hero-pic img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top 0.4rem right -1.3rem;
+    transform: scale(1.9);
+}
+
+.hero-info h1, h2{
+    font-weight: 400;
+}
+
+article p, .hero-info h2 {
+    color: var(--secondary-color);
+}
+
+.hero-info h2{
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+footer, .logo-container, .experience, .cta, .portfolio-skills, .btn-bg {
+    display: flex;
+    justify-content:center;
+}
+
+.experience {
+    margin: auto;
+    margin-top: 3rem;
+    max-width: 20rem;
+    gap: 1.5rem;
+}
+
+
+.experience b {
+    font-weight: 500;
+}
+
+.experience h2 {
+    width: 30%;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.cta {
+    margin-top: 1.2rem;
+}
+
+.cta, .btn-bg {
+    gap: 2rem;
+}
+
+.btn, .btn-2, .btn-bg {
+    border-radius: 0.7rem;
+    border: none;
+}
+
+.btn, .btn-2, .btn-bg, .wrapper h3 { 
+    font-weight: 600;
+}
+
+.btn, .btn-2, .btn-bg, .wrapper, .project-wrapper {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.download-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme-btn, .download-btn:hover, .contact-btn:hover, .btn-2:hover, .wrapper img:hover {
+    cursor: pointer; 
+}
+
+.btn:hover, .btn-2:hover, .project-wrapper:hover, .logo-container a:hover {
+    transform: scale(0.98);
+}
+
+.btn:active, .btn-2:active, .project-wrapper:active, .logo-container a:active {
+    transform: scale(1);
+}
+
+.contact-btn:hover, .download-btn{
+    background-color: var(--btn-bg-color);
+    color: white;
+}
+
+.contact-btn:hover {
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+.btn-2:hover,
+.active-btn {
+    background-color: white;
+}
+
+.btn,.btn-2 {
+    height: 3rem;
+}
+
+.btn {
+    width: 9rem;
+}
+
+.btn-2 {
+    width: 8.5rem;
+}
+
+.download-btn {
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-skills {
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.btn-bg, .wrapper {
+    width: 20rem;
+}
+
+article p, .btn-bg {
+    background-color: var(--btn-bg-light);
+}
+
+.hero, .portfolio, .skills {
+    margin-top: 2rem;
+}
+
+
+.wrapper img{
+    border-radius: 1rem;
+}
+
+article, .wrapper h3 {
+    margin-bottom: 1.5rem;
+}
+
+article {
+    flex-wrap: wrap;
+}
+
+article p{
+    border-radius: 0.5rem;
+    flex-grow: 20;
+    padding: 1rem;
+}
+
+footer{
+    margin: 3rem 0;
+}
+@media screen and (min-width: 900px) {
+    .skills, .portfolio {
+        display: flex;
+        flex-direction: row;
+        width: 45rem; /* Corrected syntax */
+    }
+
+    .skills {
+        margin: 2rem auto 0;
+        justify-content: center;
+    }
+
+    .portfolio {
+        margin: 2rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: calc(48% - 1rem); /* Adjusted width calculation */
+        flex: none;
+    }
+}
